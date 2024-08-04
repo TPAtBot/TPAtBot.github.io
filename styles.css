@@ -1,0 +1,163 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    height: 100%; /* Ensure full height for body */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+nav {
+    background-color: rgb(15, 15, 15);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px; /* Increased padding for larger buttons */
+    display: inline-block;
+    font-size: 1.2rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+}
+
+nav a:hover {
+    color: #0079be;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Allow the container to grow and take up available space */
+    text-align: center;
+    position: relative; /* Ensure relative positioning for the carousel */
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-title {
+    font-size: 4rem; /* Larger text size */
+    margin-bottom: 20px;
+    font-weight: bold; /* Make text bold */
+}
+
+.home-buttons {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add space below buttons */
+}
+
+.btn {
+    background-color: #005c91; /* Blue-purple-ish color */
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px; /* Larger padding for larger buttons */
+    border-radius: 15px; /* More rounded edges */
+    margin: 10px;
+    display: inline-block;
+    font-size: 1.5rem; /* Larger text size */
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.btn:hover {
+    background-color: #0079be; /* Slightly lighter blue-purple */
+}
+
+.carousel {
+    width: 600px; /* Set a fixed width for the carousel */
+    height: 700px; /* Set a fixed height for the carousel */
+    overflow: hidden;
+    margin-top: 50px; /* Increase space above the carousel */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%; /* Ensure inner content fills the height */
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative; /* Ensure positioning for the image container */
+}
+
+.image-container {
+    width: 100%; /* Full width of the carousel item */
+    height: 80%; /* Control the height of the image container */
+    border-radius: 15px; /* Rounded edges for the container */
+    overflow: hidden; /* Hide overflow to apply rounded edges */
+    display: flex; /* Ensure image container layout */
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.carousel-item img {
+    width: 100%; /* Ensure image fits within the container */
+    height: auto; /* Maintain original image height */
+    object-fit: cover; /* Preserve aspect ratio */
+}
+
+.carousel-item p {
+    color: #fff;
+    font-size: 1.2rem;
+    background-color: rgba(34, 34, 34, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 10px; /* Rounded edges for explanation box */
+    border: 2px solid rgb(43, 43, 43); /* White border around explanation text */
+    display: inline-block; /* Ensure it fits content size */
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px; /* Set a max width for readability */
+    margin: 23px auto; /* Center the container horizontally and add top margin */
+    text-align: center; /* Center all text within the container */
+    background-color: rgb(25, 25, 25); /* Slightly lighter background color */
+    border-radius: 15px; /* Rounded edges for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for the box */
+}
+
+/* Remove list styling */
+ul, ol {
+    list-style: none; /* Remove default bullet points or numbers */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+footer {
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: absolute; /* Absolute positioning */
+    bottom: 0; /* Stick to the bottom of the viewport */
+    box-shadow: 0 -4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.container a {
+    color: #1e90ff; /* Brighter blue color */
+    text-decoration: none; /* Remove underline */
+}
+
+.container a:hover {
+    color: #00aaff; /* Slightly lighter or different color on hover */
+    text-decoration: underline; /* Add underline on hover for clarity */
+}
